@@ -5,10 +5,13 @@ const authRouter = require("./auth.routes")
 router.use("/auth", authRouter)
 
 const forumRouter = require("./forum.routes")
-router.use("/forum", forumRouter)
+router.use("/forums", forumRouter)
 
 const eventsRouter = require("./events.routes")
 router.use("/events", eventsRouter)
+
+const commentsRouter = require("./comments.routes");
+router.use("/comments", commentsRouter);
 
 const userRouter = require("./user.routes")
 router.use("/user", userRouter)
