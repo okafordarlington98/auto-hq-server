@@ -15,7 +15,11 @@ function config(app) {
   // ℹ️ Configures CORS to allow requests only from the specified origin
   app.use(
     cors({
-      origin: [process.env.ORIGIN]
+      origin: [
+        "http://localhost:5173",
+        "https://auto-hq-client.vercel.app"
+      ],
+       credentials: true
     })
   );
   
